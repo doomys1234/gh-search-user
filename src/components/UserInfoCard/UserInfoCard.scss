@@ -1,0 +1,55 @@
+.card-wrapper {
+  display: block;
+  margin-left: auto;
+  width: 500px;
+  margin-right: auto;
+}
+.user-card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #ffffff;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+  &:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.1);
+  }
+
+  .avatar {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin: 0 auto 15px;
+  }
+
+  .username {
+    font-size: 1.5rem;
+    margin: 0;
+    color: #333333;
+  }
+
+  .bio {
+    font-size: 1rem;
+    color: #666666;
+    margin: 10px 0;
+  }
+
+  .profile-link {
+    display: block;
+    color: #007bff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+
+    &:hover {
+      color: #0056b3;
+    }
+  }
+}
